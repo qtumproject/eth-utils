@@ -103,10 +103,12 @@ if sys.version_info.major < 3:
     warnings.simplefilter("always", DeprecationWarning)
     warnings.warn(
         DeprecationWarning(
-            "The `eth-utils` library has dropped support for Python 2. Upgrade to Python 3."
+            "The `eth-utils-qtum` library has dropped support for Python 2. Upgrade to Python 3."
         )
     )
     warnings.resetwarnings()
 
-
-__version__ = pkg_resources.get_distribution("eth-utils").version
+try:
+    __version__ = pkg_resources.get_distribution("eth-utils-qtum").version
+except BaseException:
+    __version__ = '1.9.5'

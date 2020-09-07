@@ -19,7 +19,7 @@ Installation
 
 .. code:: sh
 
-   pip install eth-utils
+   pip install eth-utils-qtum
 
 Development
 -----------
@@ -28,7 +28,7 @@ Clone the repository and then run:
 
 .. code:: sh
 
-   pip install -e .[dev] eth-hash[pycryptodome]
+   pip install -e .[dev] eth-hash-qtum[pycryptodomex]
 
 Documentation
 -------------
